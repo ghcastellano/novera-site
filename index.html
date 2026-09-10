@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NOVERA GT — A nova era da condução</title>
+  <meta name="description" content="NOVERA GT — o gran turismo 100% elétrico. 830 cv, 0–100 km/h em 2,9s, 650 km de autonomia. Reserve agora." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#top" class="nav__logo" aria-label="NOVERA">
+        NOVERA<span class="dot">.</span>
+      </a>
+      <nav class="nav__links" id="navLinks">
+        <a href="#performance">Performance</a>
+        <a href="#autonomia">Autonomia</a>
+        <a href="#interior">Interior</a>
+        <a href="#tecnologia">Tecnologia</a>
+        <a href="#specs">Ficha técnica</a>
+      </nav>
+      <div class="nav__right">
+        <a href="#reserve" class="btn btn--sm btn--accent">Reservar</a>
+        <button class="nav__burger" id="burger" aria-label="Menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero__media" data-parallax>
+      <img src="" data-img="hero" alt="NOVERA GT" class="hero__img" />
+      <div class="hero__scrim"></div>
+    </div>
+    <div class="hero__content">
+      <p class="eyebrow reveal">Gran Turismo · 100% Elétrico</p>
+      <h1 class="hero__title reveal">
+        Uma nova era da<br />condução começa aqui
+      </h1>
+      <p class="hero__sub reveal">Feito para quem é movido a ir além dos limites.</p>
+      <div class="hero__cta reveal">
+        <a href="#performance" class="btn btn--light">Explorar o carro</a>
+        <a href="#reserve" class="btn btn--accent">Configurar agora</a>
+      </div>
+      <p class="hero__price reveal">A partir de R$ 589.000 — reserve por R$ 990</p>
+    </div>
+    <a href="#performance" class="hero__scroll" aria-label="Rolar">
+      <span>Rolar</span>
+      <span class="hero__scroll-line"></span>
+    </a>
+  </section>
+
+  <!-- INTRO STATEMENT -->
+  <section class="statement">
+    <div class="container">
+      <p class="statement__text reveal">
+        Algumas pessoas esperam o futuro.
+        <span class="muted">Outras o constroem.</span>
+        A NOVERA GT nasce da obsessão por unir potência bruta, silêncio absoluto e um design que respira propósito.
+      </p>
+    </div>
+  </section>
+
+  <!-- SCROLL-SCRUBBED DRIVE (signature effect) -->
+  <section class="drive" id="drive">
+    <div class="drive__pin">
+      <video class="drive__video" data-drive muted playsinline preload="auto" poster="assets/drive-poster.jpg" src="assets/drive-scrub.mp4"></video>
+      <div class="drive__scrim"></div>
+      <div class="drive__caps">
+        <div class="drive__cap on" data-cap>
+          <p class="eyebrow">A estrada é o palco</p>
+          <h2>Role para dirigir.</h2>
+        </div>
+        <div class="drive__cap" data-cap>
+          <h2>830 cv sob<br />controle absoluto.</h2>
+        </div>
+        <div class="drive__cap" data-cap>
+          <h2>Silêncio.<br />Só você e o asfalto.</h2>
+        </div>
+        <div class="drive__cap" data-cap>
+          <h2>Cada curva,<br />uma declaração.</h2>
+        </div>
+      </div>
+      <div class="drive__progress"><span data-drive-bar></span></div>
+    </div>
+  </section>
+
+  <!-- STATS STRIP -->
+  <section class="stats" id="performance">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow eyebrow--dark">Performance</p>
+        <h2 class="section-title">Potência, instantânea.</h2>
+        <p class="section-lead">Dois motores. Tração integral. Nenhum atraso entre a intenção e a ação.</p>
+      </div>
+      <div class="stats__grid">
+        <div class="stat reveal">
+          <span class="stat__num" data-count="830" data-suffix=""></span>
+          <span class="stat__unit">cv de potência</span>
+        </div>
+        <div class="stat reveal">
+          <span class="stat__num" data-count="2.9" data-decimals="1" data-prefix=""></span>
+          <span class="stat__unit">0–100 km/h (s)</span>
+        </div>
+        <div class="stat reveal">
+          <span class="stat__num" data-count="1100" data-suffix=""></span>
+          <span class="stat__unit">Nm de torque</span>
+        </div>
+        <div class="stat reveal">
+          <span class="stat__num" data-count="305" data-suffix=""></span>
+          <span class="stat__unit">km/h máx.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURE: FULL BLEED 1 -->
+  <section class="feature feature--dark">
+    <div class="feature__media" data-parallax>
+      <img src="" data-img="road" alt="NOVERA GT na estrada" />
+      <div class="feature__scrim feature__scrim--bottom"></div>
+    </div>
+    <div class="feature__body container">
+      <div class="feature__text reveal">
+        <p class="eyebrow">Autonomia</p>
+        <h2 class="feature__title" id="autonomia">650 km sem paradas.</h2>
+        <p class="feature__desc">
+          Uma bateria de 108 kWh com arquitetura de 800V leva você mais longe — e de volta à estrada em minutos, não horas.
+        </p>
+        <ul class="feature__list">
+          <li><strong>650 km</strong> de autonomia (WLTP)</li>
+          <li><strong>18 min</strong> de 10% a 80% em carregador rápido</li>
+          <li><strong>0,21 Cd</strong> de coeficiente aerodinâmico</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURE GRID -->
+  <section class="grid-feats" id="tecnologia">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow eyebrow--dark">Engenharia</p>
+        <h2 class="section-title">Cada detalhe, com intenção.</h2>
+      </div>
+      <div class="grid-feats__grid">
+        <article class="fcard reveal">
+          <div class="fcard__media"><img src="" data-img="charge" alt="Carregamento" /></div>
+          <h3>Recarga em 18 minutos</h3>
+          <p>Arquitetura de 800V que devolve 400 km de autonomia no tempo de um café.</p>
+        </article>
+        <article class="fcard reveal">
+          <div class="fcard__media"><img src="" data-img="silence" alt="Silêncio da cabine" /></div>
+          <h3>Silêncio, refinado</h3>
+          <p>Vidros duplos acústicos e isolamento ativo criam um santuário a 300 km/h.</p>
+        </article>
+        <article class="fcard reveal">
+          <div class="fcard__media"><img src="" data-img="assist" alt="Assistência de condução" /></div>
+          <h3>Confiança por design</h3>
+          <p>Suíte de 12 câmeras e assistência de condução que enxerga antes de você.</p>
+        </article>
+        <article class="fcard reveal">
+          <div class="fcard__media"><img src="" data-img="ota" alt="Atualizações OTA" /></div>
+          <h3>Sempre evoluindo</h3>
+          <p>Atualizações over-the-air que tornam o seu carro melhor a cada mês.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERIOR SPLIT -->
+  <section class="split" id="interior">
+    <div class="split__media" data-parallax>
+      <img src="" data-img="interior" alt="Interior da NOVERA GT" />
+    </div>
+    <div class="split__text">
+      <div class="split__inner reveal">
+        <p class="eyebrow eyebrow--dark">Interior</p>
+        <h2 class="section-title">Feito à mão. Pensado para você.</h2>
+        <p class="section-lead">
+          Couro nappa curtido de forma sustentável, alumínio usinado e um cockpit envolvente que coloca cada comando ao alcance dos dedos.
+        </p>
+        <a href="#reserve" class="btn btn--dark">Ver acabamentos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CINEMATIC BREAK -->
+  <section class="cine">
+    <div class="cine__media" data-parallax>
+      <img src="" data-img="track" alt="NOVERA GT na pista" />
+      <div class="feature__scrim"></div>
+    </div>
+    <div class="cine__content container reveal">
+      <h2 class="cine__title">Pronta para a pista.<br />Refinada para a rua.</h2>
+      <p class="cine__sub">Do asfalto liso da autoestrada às curvas cegas da serra — a NOVERA GT foi feita para o espectro completo da condução.</p>
+    </div>
+  </section>
+
+  <!-- SPECS -->
+  <section class="specs" id="specs">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow eyebrow--dark">Ficha técnica</p>
+        <h2 class="section-title">Os números.</h2>
+      </div>
+      <div class="specs__table reveal">
+        <div class="specs__row"><span>Potência combinada</span><span>830 cv</span></div>
+        <div class="specs__row"><span>Torque</span><span>1.100 Nm</span></div>
+        <div class="specs__row"><span>0–100 km/h</span><span>2,9 s</span></div>
+        <div class="specs__row"><span>Velocidade máxima</span><span>305 km/h</span></div>
+        <div class="specs__row"><span>Autonomia (WLTP)</span><span>650 km</span></div>
+        <div class="specs__row"><span>Bateria</span><span>108 kWh · 800V</span></div>
+        <div class="specs__row"><span>Recarga (10–80%)</span><span>18 min</span></div>
+        <div class="specs__row"><span>Coeficiente aerodinâmico</span><span>0,21 Cd</span></div>
+        <div class="specs__row"><span>Tração</span><span>Integral · dois motores</span></div>
+        <div class="specs__row"><span>Preço a partir de</span><span>R$ 589.000</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESERVE CTA -->
+  <section class="reserve" id="reserve">
+    <div class="reserve__media" data-parallax>
+      <img src="" data-img="reserve" alt="Reserve a NOVERA GT" />
+      <div class="hero__scrim"></div>
+    </div>
+    <div class="reserve__content container reveal">
+      <p class="eyebrow">Pré-venda aberta</p>
+      <h2 class="reserve__title">Seja o primeiro a dirigir.</h2>
+      <p class="reserve__sub">A partir de R$ 589.000. Garanta sua unidade com uma reserva de R$ 990 — totalmente reembolsável.</p>
+      <a href="#newsletter" class="btn btn--accent btn--lg">Reservar agora</a>
+      <p class="disclaimer">O veículo apresentado é um modelo de pré-produção. Especificações e aparência podem sofrer alterações.</p>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="news" id="newsletter">
+    <div class="container news__inner reveal">
+      <div>
+        <h2 class="news__title">Fique por dentro.</h2>
+        <p class="news__sub">Novidades, datas de test-drive e lançamentos — direto no seu e-mail.</p>
+      </div>
+      <form class="news__form" id="newsForm">
+        <input type="email" required placeholder="seu@email.com" aria-label="E-mail" />
+        <button type="submit" class="btn btn--dark">Inscrever</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="nav__logo">NOVERA<span class="dot">.</span></span>
+        <p>Gran turismo elétrico. Feito para quem dirige o futuro.</p>
+      </div>
+      <div class="footer__cols">
+        <div>
+          <h4>Modelo</h4>
+          <a href="#performance">Performance</a>
+          <a href="#autonomia">Autonomia</a>
+          <a href="#specs">Ficha técnica</a>
+        </div>
+        <div>
+          <h4>Empresa</h4>
+          <a href="#">Nossa história</a>
+          <a href="#">Carreiras</a>
+          <a href="#">Imprensa</a>
+        </div>
+        <div>
+          <h4>Social</h4>
+          <a href="#">Instagram</a>
+          <a href="#">YouTube</a>
+          <a href="#">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <span>© 2026 NOVERA Motors. Todos os direitos reservados.</span>
+      <span>Privacidade · Termos</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
